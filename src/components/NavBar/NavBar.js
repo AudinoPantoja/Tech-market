@@ -35,7 +35,7 @@ export default function NavBar() {
                             priority
                         />
                         <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
-                            Tienda Virtual Tech Market133
+                            Tienda Virtual Tech Market
                         </Typography>
                     </Box>
                     <Search />
