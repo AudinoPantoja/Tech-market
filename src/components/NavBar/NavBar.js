@@ -1,16 +1,15 @@
 'use client';
 
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Search from "@/components/Search";
-import Typography from "@mui/material/Typography";
+import firebase_app from "@/firebase/config";
+import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import Image from "next/image";
 import Link from 'next/link';
 import { useEffect, useState } from "react";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import firebase_app from "@/firebase/config";
-import { Button } from "@mui/material";
 
 export default function NavBar() {
 
@@ -29,14 +28,14 @@ export default function NavBar() {
                 <Toolbar>
                     <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
                         <Image
-                            src="/logo tienda.svg"
+                            src="/logo tienda.JPEG"
                             alt="Tienda Putumayo"
                             width={50}
                             height={50}
                             priority
                         />
                         <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
-                            Tienda Putumayo
+                            Tienda Virtual Tech Market
                         </Typography>
                     </Box>
                     <Search />
