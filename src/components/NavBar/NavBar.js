@@ -29,13 +29,13 @@ export default function NavBar() {
                     <Box component={Link} href="/" sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
                         <Image
                             src="/logo tienda.JPEG"
-                            alt="Tienda Putumayo"
+                            alt="Tienda Virtual Tech Market"
                             width={50}
                             height={50}
                             priority
                         />
                         <Typography variant="h6" component="h1" sx={{ ml: 1, display: { xs: 'none', sm: 'block' } }}>
-                            Tienda Virtual Tech Market
+                            Tienda Virtual Tech Market133
                         </Typography>
                     </Box>
                     <Search />
